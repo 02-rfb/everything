@@ -12,8 +12,8 @@ namespace futok1
         public string Nev = "";
         public DateTime Szuletes;
         public string Orszag = "";
-        public string IdoSzoveg = "";   // pl. 40:05.18 (kiÌr·shoz)
-        public double Masodperc;        // az idı m·sodpercben (rendezÈshez)
+        public string IdoSzoveg = "";   // pl. 40:05.18 (ki√≠r√°shoz)
+        public double Masodperc;        // az id√µ m√°sodpercben (rendez√©shez)
 
         public int Kor
         {
@@ -30,7 +30,7 @@ namespace futok1
             InitializeComponent();
         }
 
-        // "40:05.18" vagy "1:40:05.18" -> m·sodperc
+        // "40:05.18" vagy "1:40:05.18" -> m√°sodperc
         double IdoMasodpercben(string ido)
         {
             double mp = 0;
@@ -44,7 +44,7 @@ namespace futok1
         void Betolt()
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Szˆveges f·jl|*.txt";
+            ofd.Filter = "Sz√∂veges f√°jl|*.txt";
             if (ofd.ShowDialog() != DialogResult.OK) return;
 
             lista.Clear();
